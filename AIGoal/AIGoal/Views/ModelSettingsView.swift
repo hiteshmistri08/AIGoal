@@ -67,7 +67,7 @@ struct ModelSettingsView: View {
 
                     Text(
                         "Importing a model requires access to the selected file. "
-                        + "GoalCraft does not need a cloud AI API."
+                        + "AIGoal does not need a cloud AI API."
                     )
                     .font(.footnote)
                     .foregroundStyle(.secondary)

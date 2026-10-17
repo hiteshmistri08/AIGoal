@@ -84,7 +84,7 @@ struct DashboardView: View {
     private var header: some View {
         HStack(alignment: .center) {
             VStack(alignment: .leading, spacing: 5) {
-                Text("GOALCRAFT")
+                Text("AIGoal")
                     .font(.caption.bold())
                     .tracking(2.2)
                     .foregroundStyle(Color.goalPurple)
