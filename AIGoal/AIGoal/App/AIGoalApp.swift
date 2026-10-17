@@ -6,12 +6,19 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct AIGoalApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DashboardView()
         }
+        .modelContainer(
+            for: [
+                Goal.self,
+                GoalTask.self
+            ]
+        )
     }
 }
