@@ -181,6 +181,9 @@
 			);
 			mainGroup = 043A8AE5308385B300FD8FB7;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				043A8B2F308390E800FD8FB7 /* XCRemoteSwiftPackageReference "swift-llama-cpp" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 043A8AEF308385B300FD8FB7 /* Products */;
 			projectDirPath = "";
@@ -548,6 +551,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		043A8B2F308390E800FD8FB7 /* XCRemoteSwiftPackageReference "swift-llama-cpp" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pgorzelany/swift-llama-cpp";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 043A8AE6308385B300FD8FB7 /* Project object */;
 	validationLevel = 1;
