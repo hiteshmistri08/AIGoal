@@ -6,6 +6,10 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		04C9965330839CEE00BCCA7A /* SwiftLlama in Frameworks */ = {isa = PBXBuildFile; productRef = 04C9965230839CEE00BCCA7A /* SwiftLlama */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		043A8AFC308385B600FD8FB7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -51,6 +55,7 @@
 		043A8AEB308385B300FD8FB7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				04C9965330839CEE00BCCA7A /* SwiftLlama in Frameworks */,
 			);
 		};
 		043A8AF8308385B600FD8FB7 /* Frameworks */ = {
@@ -72,6 +77,7 @@
 				043A8AF0308385B300FD8FB7 /* AIGoal */,
 				043A8AFE308385B600FD8FB7 /* AIGoalTests */,
 				043A8B08308385B600FD8FB7 /* AIGoalUITests */,
+				04C9965130839CEE00BCCA7A /* Frameworks */,
 				043A8AEF308385B300FD8FB7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,6 +90,13 @@
 				043A8B05308385B600FD8FB7 /* AIGoalUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		04C9965130839CEE00BCCA7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,6 +116,9 @@
 				043A8AF0308385B300FD8FB7 /* AIGoal */,
 			);
 			name = AIGoal;
+			packageProductDependencies = (
+				04C9965230839CEE00BCCA7A /* SwiftLlama */,
+			);
 			productName = AIGoal;
 			productReference = 043A8AEE308385B300FD8FB7 /* AIGoal.app */;
 			productType = "com.apple.product-type.application";
@@ -562,6 +578,14 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04C9965230839CEE00BCCA7A /* SwiftLlama */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 043A8B2F308390E800FD8FB7 /* XCRemoteSwiftPackageReference "swift-llama-cpp" */;
+			productName = SwiftLlama;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 043A8AE6308385B300FD8FB7 /* Project object */;
 	validationLevel = 1;
