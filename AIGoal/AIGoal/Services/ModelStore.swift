@@ -19,7 +19,7 @@ enum ModelStore {
             in: .userDomainMask
         )[0]
     }
-
+    
     static var currentModelURL: URL? {
         let filename = UserDefaults.standard.string(
             forKey: preferenceKey
@@ -35,6 +35,22 @@ enum ModelStore {
 
         return url
     }
+    
+    ///
+    /// This is used for simulator run only
+    /// Download .guuf model file and add into project then enable this below code and then run the simulator
+    ///
+    /*
+    static var currentModelURL: URL? {
+        guard let modelURL = Bundle.main.url(
+            forResource: "Qwen2.5-1.5B-Instruct-Q4_K_M",
+            withExtension: "gguf"
+        ) else {
+            return nil
+        }
+        return modelURL
+    }
+    */
 
     static func importModel(from sourceURL: URL) throws -> URL {
         let didAccess = sourceURL.startAccessingSecurityScopedResource()
